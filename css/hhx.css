@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background: url("../images/hhx-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: Georgia, serif;
+    width: inherit;
+}
+
+.box {
+    position: absolute;
+    width: 45%;
+    height: 50%;
+    top: 45%;
+    left: 63%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        background: url("../images/hhxMobile-background.jpg");
+    }
+
+    .box {
+        width: 85%;
+        height: 85%;
+        top: 50%;
+        left: 50%;
+
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+span {
+    color: #0047AB;
+}
+
+#header {
+    text-align: center;
+    font-weight: 900;
+}
+
+#manchet {
+    font-size: 120%;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #0047AB; /* old IE */
+    background-color: #0047AB; /* Modern Browsers */
+}
+
+.btn {
+    border: 1px solid #0047AB;
+    background: none;
+    padding: 15px 32px;
+    cursor: pointer;
+    margin: 1px;
+    width: 110px;
+    transition: 0.35s;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+  }
+  
+  .btn1 {
+    color: #ededed;
+  }
+  
+  .btn1:hover {
+    color: #000000;
+    font-weight: 900;
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    height: 0%;
+    width: 110px;
+    background: #0047AB;
+    z-index: -1;
+    transition: 0.35s;
+  }
+  
+  .btn1:before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    height: 180%;
+  }
+  
+  .btn:hover::before {
+    height: 0%;
+  }

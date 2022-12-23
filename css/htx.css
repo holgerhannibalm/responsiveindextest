@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background: url("../images/htx-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: Georgia, serif;
+    width: inherit;
+}
+
+.box {
+    position: absolute;
+    width: 45%;
+    height: 50%;
+    top: 45%;
+    left: 71%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    border: 1px solid black;
+}
+
+span {
+    color: #228B22;
+}
+
+#header {
+    text-align: center;
+    font-weight: 900;
+}
+
+#manchet {
+    font-size: 120%;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #228B22; /* old IE */
+    background-color: #228B22; /* Modern Browsers */
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        background: url("../images/htxMobile-background.jpg");
+    }
+
+    .box {
+        width: 85%;
+        height: 85%;
+        top: 50%;
+        left: 50%;
+
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
